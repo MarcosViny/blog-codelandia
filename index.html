@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelândia | Desafio 01</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/46e02bda27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <section class="container header-container">
+            <nav class="header__title">
+                <p>Codelândia</p>
+                <p>blog</p>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search__input" placeholder="Pesquisar no Blog">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </section>
+    </header>
+
+    <main class="container main-container">
+        <section class="posts">
+            <div class="post">
+                <div class="post__info">
+                    <span class="post__date">02 de jul, 2021</span>
+                    <i class="js-like far fa-heart"></i>
+                </div>
+                <div class="post__wrapper">
+                    <h1 class="post__title">Agora é Oficial</h1>
+                    <p class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora
+                        eligendi voluptates commodi?
+                        Delectus</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__info">
+                    <span class="post__date">02 de jul, 2021</span>
+                    <i class="js-like far fa-heart"></i>
+                </div>
+                <div class="post__wrapper">
+                    <h1 class="post__title">Tim Berners-Lee vai leiloar código-fonte da web</h1>
+                    <p class="post__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu
+                        ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo
+                        sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper
+                        libero.</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__info">
+                    <span class="post__date">02 de jul, 2021</span>
+                    <i class="js-like far fa-heart"></i>
+                </div>
+                <div class="post__wrapper">
+                    <h1 class="post__title">Tem Firefox novo no pedaço e você vai querer migra</h1>
+                    <p class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora
+                        eligendi voluptates commodi?
+                        Delectus</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__info">
+                    <span class="post__date">02 de jul, 2021</span>
+                    <i class="js-like far fa-heart"></i>
+                </div>
+                <div class="post__wrapper">
+                    <h1 class="post__title">John McAfee, criador do antivírus McAfee, morre</h1>
+                    <p class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora
+                        eligendi voluptates commodi?
+                        Delectus</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-span">
+            © By <a class="footer__name" target="_blank" href="https://github.com/MarcosViny">Marcos Vinicius.</a> 2021
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.post', { delay: 100 });
+        ScrollReveal().reveal('.post__info', { delay: 300 });
+        ScrollReveal().reveal('.post__title', { delay: 400 });
+        ScrollReveal().reveal('.post__description', { delay: 500 });
+    </script>
+</body>
+
+</html>

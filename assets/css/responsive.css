@@ -1,0 +1,41 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        font-size: 54%;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .main-container {
+        padding: 4rem 0;
+    }
+
+    .post {
+        margin: 4rem 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 85%;
+    }
+
+    .main-container {
+        padding: 2rem 0;
+    }
+
+    .post {
+        margin: 3rem 0;
+    }
+}
