@@ -66,6 +66,10 @@ header {
     color: var(--glassEffect);
 }
 
+.main-container {
+    min-height: 100vh;
+}
+
 .post {
     margin: 5rem 0;
     padding: 2.5rem;
